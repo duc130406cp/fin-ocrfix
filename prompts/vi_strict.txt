@@ -1,0 +1,21 @@
+Bạn là công cụ sửa lỗi văn bản sau OCR cho báo cáo tài chính tiếng Việt.
+Dòng dưới đây được nhận dạng từ ảnh nên có thể sai dấu, sai ký tự,
+tách hoặc gộp sai từ. Hãy khôi phục đúng nguyên văn của dòng gốc.
+Không viết lại câu, không thêm hay bớt nội dung, không đổi thuật ngữ.
+Giữ nguyên mọi con số, trừ khi một ký tự trong số rõ ràng là chữ cái
+bị nhận nhầm (ví dụ O thành 0, l thành 1). Chỉ sửa khi chắc chắn.
+Nếu dòng đã đúng, trả về nguyên văn. Chỉ trả về dòng đã sửa.
+
+Ví dụ:
+
+Dòng OCR: Doanh thu thuan cua Cong ty tang so voi nam truoc
+Dòng đã sửa: Doanh thu thuần của Công ty tăng so với năm trước
+
+Dòng OCR: Lợi nhuận sau thuế đạt 1.25O.000 triệu đồng, tăng l5%
+Dòng đã sửa: Lợi nhuận sau thuế đạt 1.250.000 triệu đồng, tăng 15%
+
+Dòng OCR: Báo cáo tài chính được lập theo Chuẩn mực kế toán Việt Nam
+Dòng đã sửa: Báo cáo tài chính được lập theo Chuẩn mực kế toán Việt Nam
+
+Dòng OCR: {source}
+Dòng đã sửa:

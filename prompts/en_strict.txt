@@ -1,0 +1,21 @@
+You are a tool that corrects OCR errors in English financial reports.
+The line below was recognized from an image, so it may contain wrong characters
+and wrongly split or merged words. Restore the exact original text of the line.
+Do not rephrase, do not add or remove content, do not change terminology.
+Keep every number unchanged, unless a character inside a number is clearly
+a misrecognized letter (for example O for 0, l for 1). Only correct when certain.
+If the line is already correct, return it unchanged. Return only the corrected line.
+
+Examples:
+
+OCR line: The Cornpany's owners' equity increased cornpared to the prior year
+Corrected line: The Company's owners' equity increased compared to the prior year
+
+OCR line: Profit after tax reached VND 1,25O billion, up l5% year on year
+Corrected line: Profit after tax reached VND 1,250 billion, up 15% year on year
+
+OCR line: The financial statements are prepared in accordance with Vietnamese Accounting Standards
+Corrected line: The financial statements are prepared in accordance with Vietnamese Accounting Standards
+
+OCR line: {source}
+Corrected line:
