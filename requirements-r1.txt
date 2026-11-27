@@ -1,0 +1,5 @@
+# Phiên bản đã kiểm chứng cho pipeline dữ liệu R1 (Python 3.12.3).
+# Tesseract 5.3.4 + vie/eng là dependency hệ thống, xem README.
+PyMuPDF==1.28.0
+Pillow==12.2.0
+pytesseract==0.3.13

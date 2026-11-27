@@ -1,0 +1,96 @@
+{
+  "seed": 42,
+  "base_line_counts": {
+    "vi": 13,
+    "en": 12
+  },
+  "dev_lines_per_language": 3,
+  "record_counts": {
+    "vi_dev.jsonl": 6,
+    "vi_test.jsonl": 20,
+    "en_dev.jsonl": 6,
+    "en_test.jsonl": 18
+  },
+  "empty_source_count": 0,
+  "unchanged_source_count": 23,
+  "sources": [
+    {
+      "doc_id": "HPG_2024_BCTN_EN",
+      "company": "Công ty Cổ phần Tập đoàn Hòa Phát",
+      "year": "2024",
+      "report_type": "Báo cáo thường niên – thuyết minh BCTC hợp nhất",
+      "lang": "en",
+      "filename": "HPG_2024_BCTN_EN.pdf",
+      "url": "https://file.hoaphat.com.vn/hoaphat-com-vn/2025/04/hpg-annual-report-2024.pdf",
+      "page_start": "115",
+      "page_end": "128",
+      "sha256": "cd18325074be3d976eab5963db5052fef3c5d8c9f4abe8387603418b1cbee02d"
+    },
+    {
+      "doc_id": "HPG_2024_BCTN_VI",
+      "company": "Công ty Cổ phần Tập đoàn Hòa Phát",
+      "year": "2024",
+      "report_type": "Báo cáo thường niên – thuyết minh BCTC hợp nhất",
+      "lang": "vi",
+      "filename": "HPG_2024_BCTN_VI.pdf",
+      "url": "https://file.hoaphat.com.vn/hoaphat-com-vn/2025/04/bao-cao-thuong-nien-hpg-2024.pdf",
+      "page_start": "115",
+      "page_end": "128",
+      "sha256": "4f203765a2c39a14aa8c78838d3b21db5b03f663b2c4490b801d17427830446d"
+    }
+  ],
+  "extraction": {
+    "HPG_2024_BCTN_EN": {
+      "pages": 14,
+      "raw_lines": 909,
+      "invalid_text": 651,
+      "table_or_columns": 92,
+      "page_margin": 14,
+      "repeated_lines": 37,
+      "candidates": 115
+    },
+    "HPG_2024_BCTN_VI": {
+      "pages": 14,
+      "raw_lines": 890,
+      "invalid_text": 534,
+      "page_margin": 15,
+      "table_or_columns": 128,
+      "repeated_lines": 74,
+      "candidates": 139
+    }
+  },
+  "render_dpi": 300,
+  "margin_px": 4,
+  "noise_settings": {
+    "light": {
+      "dpi": 150,
+      "blur": 0.3,
+      "jpeg_quality": 60
+    },
+    "heavy": {
+      "dpi": 100,
+      "blur": 0.6,
+      "jpeg_quality": 30,
+      "rotation_degrees": 1.0,
+      "salt_pepper_fraction": 0.01
+    }
+  },
+  "ocr_config": "--psm 7",
+  "ocr_timeout": 30.0,
+  "versions": {
+    "python": "3.12.3",
+    "pymupdf": "1.28.0",
+    "pillow": "12.2.0",
+    "pytesseract": "0.3.13",
+    "tesseract": "5.3.4"
+  },
+  "split_policy": "deduplicate target per language; sample with seed; dev first; paired noise stays together",
+  "quality_status": "sample_unreviewed; error_types require manual annotation under B2",
+  "output_sha256": {
+    "vi_dev.jsonl": "fb0db627aeb220bc9c3ff29bf1acaeee402dde8279669bf154e28df09f05b1ab",
+    "vi_test.jsonl": "33cc160f3b2037dc637c5b97d3fa2cb6acd90780e781e4d23f8ac7afa4f1d20a",
+    "en_dev.jsonl": "0152736cdd49c1f0dca6a8b117d5f50a0c979b69413736f522e196d5caf78cca",
+    "en_test.jsonl": "499036a27613c485c4a3db9edf3264d3d29965f5bd708f85d40948c3bcc32484",
+    "line_manifest.jsonl": "99936213c0058824660778b04f084877eab4fc60b73f4aa3ecbf7dcc6a1580c7"
+  }
+}
