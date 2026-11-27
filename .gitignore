@@ -1,0 +1,25 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+
+# Dự án fin-ocrfix (C2, C8): không commit PDF gốc và ảnh dòng dung lượng lớn
+data/pdf/
+data/lines/
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

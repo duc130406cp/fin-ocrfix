@@ -44,14 +44,17 @@ Mở trên Colab/Kaggle (GPU T4), chạy từ trên xuống. Notebook làm các 
 
 Phương án dự phòng (C4): nếu sau nửa ngày vẫn không load được hoặc không tắt được thinking, đổi `MODEL_ID = "Qwen/Qwen2.5-1.5B-Instruct"`, báo nhóm và ghi lý do vào README.
 
-## 5. Kết quả chạy thử (điền sau khi chạy notebook)
+## 5. Kết quả chạy thử (đã điền từ `notebooks/r4_qwen35_smoke_test.ipynb`)
 
-- Môi trường (GPU / torch / transformers):
-- Class load được:
-- dtype dùng:
-- VRAM:
-- Template mặc định == `enable_thinking=False`:
-- Output còn thinking:
-- Lỗi định dạng:
-- Tốc độ (s/dòng) và ước tính thời gian chạy full:
-- Ghi chú / lỗi gặp phải (dán nguyên thông báo lỗi):
+- Môi trường (GPU / torch / transformers): Tesla T4 (15.360 MiB), Python 3.13.16, `torch 2.14.1+cu130`, `transformers 5.24.1` (bản PyPI, không cần cài từ `main`).
+- Class load được: `AutoModelForMultimodalLM` (`Qwen3_5ForConditionalGeneration`) + `AutoProcessor`.
+- dtype dùng: `torch.float16` (ổn định trên T4, không NaN/rỗng/ký tự rác).
+- VRAM: sau khi load `4.44 GB`, đỉnh `4.51 GB` (dư nhiều để chạy `batch_size=4–8`).
+- Template mặc định == `enable_thinking=False`: `True` (template chèn `<think>\n\n</think>\n\n`; đối chứng `enable_thinking=True` sinh `Thinking Process:...` và bị bộ lọc bắt đúng).
+- Output còn thinking: `0/12` dòng (`enable_thinking=False`).
+- Lỗi định dạng: `0/12` dòng.
+- Khớp hoàn toàn target (6 câu tự soạn × 2 prompt): `basic` **67% (4/6)**, `strict` **83% (5/6)**.
+  - Tín hiệu sớm cho RQ4: ở câu EN đã đúng `Cost of goods sold decreased by 8% compared to 2024`, bản `basic` tự sửa sai năm `2024` → `2023`, trong khi bản `strict` giữ nguyên chính xác `2024`.
+  - Câu VI mất dấu hoàn toàn (`Gia von hang ban...`): cả `basic` và `strict` sửa đúng hầu hết câu, chỉ sót chữ đầu `Gia` (chưa thành `Giá`).
+- Tốc độ (s/dòng) và ước tính thời gian chạy full: trung bình `1.21 s/dòng` (`batch=1`) → ước tính 1.500 dòng × 2 nhiễu × 2 prompt (6.000 dòng) ≈ `2.0 giờ` ở `batch=1` (sẽ nhanh hơn khi chạy batch trong `src/run_llm.py`).
+- Ghi chú / lỗi gặp phải: `transformers` cảnh báo fallback sang reference PyTorch implementation vì chưa cài `causal_conv1d` và `flash-linear-attention` (kết quả vẫn chính xác, chỉ chậm hơn kernel tối ưu). Không cần kích hoạt phương án dự phòng C4.
