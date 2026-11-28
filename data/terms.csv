@@ -1,0 +1,106 @@
+term,lang,group
+doanh thu thuần,vi,chỉ tiêu
+doanh thu bán hàng và cung cấp dịch vụ,vi,chỉ tiêu
+giá vốn hàng bán,vi,chỉ tiêu
+lợi nhuận gộp,vi,chỉ tiêu
+doanh thu hoạt động tài chính,vi,chỉ tiêu
+chi phí tài chính,vi,chỉ tiêu
+chi phí lãi vay,vi,chỉ tiêu
+chi phí bán hàng,vi,chỉ tiêu
+chi phí quản lý doanh nghiệp,vi,chỉ tiêu
+thu nhập khác,vi,chỉ tiêu
+lợi nhuận trước thuế,vi,chỉ tiêu
+chi phí thuế thu nhập doanh nghiệp,vi,chỉ tiêu
+lợi nhuận sau thuế,vi,chỉ tiêu
+lãi cơ bản trên cổ phiếu,vi,chỉ tiêu
+tổng tài sản,vi,chỉ tiêu
+tài sản ngắn hạn,vi,chỉ tiêu
+tài sản dài hạn,vi,chỉ tiêu
+tiền và các khoản tương đương tiền,vi,chỉ tiêu
+phải thu khách hàng,vi,chỉ tiêu
+hàng tồn kho,vi,chỉ tiêu
+tài sản cố định,vi,chỉ tiêu
+bất động sản đầu tư,vi,chỉ tiêu
+nợ phải trả,vi,chỉ tiêu
+nợ ngắn hạn,vi,chỉ tiêu
+nợ dài hạn,vi,chỉ tiêu
+vốn chủ sở hữu,vi,chỉ tiêu
+vốn góp của chủ sở hữu,vi,chỉ tiêu
+lợi nhuận chưa phân phối,vi,chỉ tiêu
+lợi nhuận sau thuế chưa phân phối,vi,chỉ tiêu
+lợi ích cổ đông không kiểm soát,vi,chỉ tiêu
+lưu chuyển tiền thuần từ hoạt động kinh doanh,vi,chỉ tiêu
+khấu hao tài sản cố định,vi,chỉ tiêu
+cổ tức,vi,chỉ tiêu
+LNST,vi,viết tắt
+LNTT,vi,viết tắt
+VCSH,vi,viết tắt
+BCTC,vi,viết tắt
+HĐQT,vi,viết tắt
+TSCĐ,vi,viết tắt
+ĐHĐCĐ,vi,viết tắt
+BKS,vi,viết tắt
+TNDN,vi,viết tắt
+GTGT,vi,viết tắt
+CTCP,vi,viết tắt
+triệu đồng,vi,đơn vị
+tỷ đồng,vi,đơn vị
+nghìn đồng,vi,đơn vị
+nghìn tỷ đồng,vi,đơn vị
+đồng Việt Nam,vi,đơn vị
+triệu USD,vi,đơn vị
+tỷ USD,vi,đơn vị
+VND,vi,đơn vị
+USD,vi,đơn vị
+net revenue,en,chỉ tiêu
+revenue from sales of goods and rendering of services,en,chỉ tiêu
+cost of goods sold,en,chỉ tiêu
+gross profit,en,chỉ tiêu
+financial income,en,chỉ tiêu
+financial expenses,en,chỉ tiêu
+interest expense,en,chỉ tiêu
+selling expenses,en,chỉ tiêu
+general and administrative expenses,en,chỉ tiêu
+other income,en,chỉ tiêu
+profit before tax,en,chỉ tiêu
+corporate income tax expense,en,chỉ tiêu
+profit after tax,en,chỉ tiêu
+basic earnings per share,en,chỉ tiêu
+total assets,en,chỉ tiêu
+current assets,en,chỉ tiêu
+non-current assets,en,chỉ tiêu
+cash and cash equivalents,en,chỉ tiêu
+trade receivables,en,chỉ tiêu
+inventories,en,chỉ tiêu
+fixed assets,en,chỉ tiêu
+investment properties,en,chỉ tiêu
+liabilities,en,chỉ tiêu
+current liabilities,en,chỉ tiêu
+non-current liabilities,en,chỉ tiêu
+owners' equity,en,chỉ tiêu
+owners' contributed capital,en,chỉ tiêu
+retained earnings,en,chỉ tiêu
+non-controlling interests,en,chỉ tiêu
+net cash flows from operating activities,en,chỉ tiêu
+depreciation of fixed assets,en,chỉ tiêu
+dividends,en,chỉ tiêu
+EBITDA,en,viết tắt
+EPS,en,viết tắt
+ROE,en,viết tắt
+ROA,en,viết tắt
+IFRS,en,viết tắt
+VAS,en,viết tắt
+GAAP,en,viết tắt
+NPL,en,viết tắt
+CEO,en,viết tắt
+AGM,en,viết tắt
+ESOP,en,viết tắt
+million,en,đơn vị
+billion,en,đơn vị
+thousand,en,đơn vị
+VND,en,đơn vị
+USD,en,đơn vị
+VND million,en,đơn vị
+VND billion,en,đơn vị
+USD million,en,đơn vị
+Vietnam Dong,en,đơn vị
